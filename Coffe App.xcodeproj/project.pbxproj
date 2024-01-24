@@ -12,6 +12,11 @@
 		702FA28B2B6142E80018059C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA28A2B6142E80018059C /* ViewController.swift */; };
 		702FA2902B6142EB0018059C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702FA28F2B6142EB0018059C /* Assets.xcassets */; };
 		702FA2932B6142EB0018059C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702FA2912B6142EB0018059C /* LaunchScreen.storyboard */; };
+		702FA29C2B6145080018059C /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA29B2B6145080018059C /* ApplicationService.swift */; };
+		702FA29E2B6145370018059C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA29D2B6145370018059C /* UserService.swift */; };
+		702FA2A12B61456C0018059C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2A02B61456C0018059C /* UserData.swift */; };
+		702FA2A42B6145C90018059C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2A32B6145C90018059C /* Constants.swift */; };
+		702FA2A82B6146510018059C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2A72B6146510018059C /* Helpers.swift */; };
 		C26782A32DB9A7EA6DCF5503 /* Pods_Coffe_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEAD9675DF0796A6549E295 /* Pods_Coffe_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,11 @@
 		702FA28F2B6142EB0018059C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		702FA2922B6142EB0018059C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702FA2942B6142EB0018059C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		702FA29B2B6145080018059C /* ApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
+		702FA29D2B6145370018059C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		702FA2A02B61456C0018059C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		702FA2A32B6145C90018059C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		702FA2A72B6146510018059C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C7DC23E8662DF4B280BD695F /* Pods-Coffe App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe App.release.xcconfig"; path = "Target Support Files/Pods-Coffe App/Pods-Coffe App.release.xcconfig"; sourceTree = "<group>"; };
 		DEEAD9675DF0796A6549E295 /* Pods_Coffe_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +79,10 @@
 		702FA2852B6142E80018059C /* Coffe App */ = {
 			isa = PBXGroup;
 			children = (
+				702FA2A52B6146140018059C /* Utilities */,
+				702FA2A22B6145AD0018059C /* Resources */,
+				702FA29F2B6145580018059C /* Entites */,
+				702FA29A2B6144DA0018059C /* Service */,
 				702FA2862B6142E80018059C /* AppDelegate.swift */,
 				702FA2882B6142E80018059C /* SceneDelegate.swift */,
 				702FA28A2B6142E80018059C /* ViewController.swift */,
@@ -79,13 +93,53 @@
 			path = "Coffe App";
 			sourceTree = "<group>";
 		};
+		702FA29A2B6144DA0018059C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				702FA29B2B6145080018059C /* ApplicationService.swift */,
+				702FA29D2B6145370018059C /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		702FA29F2B6145580018059C /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				702FA2A02B61456C0018059C /* UserData.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		702FA2A22B6145AD0018059C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				702FA2A32B6145C90018059C /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		702FA2A52B6146140018059C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				702FA2A62B61461E0018059C /* Helpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		702FA2A62B61461E0018059C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				702FA2A72B6146510018059C /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		80AAD87C67B97EA81C2156C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				17EFA18701C77904D26059EA /* Pods-Coffe App.debug.xcconfig */,
 				C7DC23E8662DF4B280BD695F /* Pods-Coffe App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,7 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702FA2A12B61456C0018059C /* UserData.swift in Sources */,
+				702FA29C2B6145080018059C /* ApplicationService.swift in Sources */,
+				702FA29E2B6145370018059C /* UserService.swift in Sources */,
+				702FA2A82B6146510018059C /* Helpers.swift in Sources */,
 				702FA28B2B6142E80018059C /* ViewController.swift in Sources */,
+				702FA2A42B6145C90018059C /* Constants.swift in Sources */,
 				702FA2872B6142E80018059C /* AppDelegate.swift in Sources */,
 				702FA2892B6142E80018059C /* SceneDelegate.swift in Sources */,
 			);
