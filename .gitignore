@@ -1,0 +1,7 @@
+# Xcode
+#
+build/
+# CocoaPods
+Podfile.lock
+Pods
+*.xcworkspace
