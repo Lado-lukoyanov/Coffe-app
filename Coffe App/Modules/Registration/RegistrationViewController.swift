@@ -14,6 +14,9 @@ final class RegistrationViewController: ViewController {
         size: 15,
         color: Constants.Colors.textBrownColor
     )
+    
+    private lazy var buttonRegistration = CreateButton(
+        name: Constants.Text.registration)
 
     private lazy var passwordLabel = CreateLabele(
         nameLabel: Constants.Text.password,
@@ -65,6 +68,7 @@ final class RegistrationViewController: ViewController {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.addArrangedSubview(returnPasswordLabel)
         stack.addArrangedSubview(returnTextFiled)
+        stack.addArrangedSubview(buttonRegistration)
         return stack
     }()
 

@@ -19,6 +19,6 @@ struct Configuration {
     }
     
     struct YandexKey {
-        static let key = "6bf3ae53-287e-4147-8ca5-c46c5c33e201"
+        static let key = "YOUR_API_KEY"
     }
 }
