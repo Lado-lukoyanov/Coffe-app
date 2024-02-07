@@ -63,7 +63,7 @@ extension RegistrationInteractor: RegistrationInteractorInput {
         NetworkManager.AuthClient.rigsiration(email, password: pass) { [weak self] result in
             switch result {
             case.success(let token):
-                return UserService.shared.token = token
+                UserService.shared.token = token
                 self?.presenter?.registrationSuccess()
             case .failure(let error):
                 self?.errorMessenge(error: error)

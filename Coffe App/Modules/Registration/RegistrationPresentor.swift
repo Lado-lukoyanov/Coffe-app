@@ -27,13 +27,16 @@ extension RegistrationPresenter: RegistrationViewOutput {
     func registerButtonTapped(login: String?, password: String?, confirmPassword: String?) {
         interactor.registerNewUser(login, password: password, confirmPassword: confirmPassword)
     }
-
-    func loginButtonTapped() {
-    }
+    
 }
 
 extension RegistrationPresenter: RegistrationInteractorOutput {
-    func registrationSuccess() {}
-    func registrationFailed(withError message: String) {}
+    func registrationSuccess() {
+        router.showAuth()
+        
+    }
+    func registrationFailed(withError message: String) {
+        view?.showError(message)
+    }
     
 }

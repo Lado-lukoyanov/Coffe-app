@@ -13,7 +13,6 @@ protocol RegistrationViewInput: AnyObject {
 
 protocol RegistrationViewOutput {
     func registerButtonTapped(login: String?, password: String?, confirmPassword: String?)
-    func loginButtonTapped()
 }
 
 protocol RegistrationInteractorInput {
@@ -26,6 +25,5 @@ protocol RegistrationInteractorOutput: AnyObject {
 }
 
 protocol RegistrationRouterInput {
-    func showMain()
     func showAuth()
 }

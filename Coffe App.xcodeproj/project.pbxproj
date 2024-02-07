@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DB1D8427BB421C273BF7666 /* Pods_Coffe_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DE08FCE30BCAFE2EE63992 /* Pods_Coffe_App.framework */; };
+		70083DD72B73569C0064340A /* LocationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DD62B73569C0064340A /* LocationEndpoint.swift */; };
+		70083DD92B7357EB0064340A /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DD82B7357EB0064340A /* LocationRequest.swift */; };
 		702FA2872B6142E80018059C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2862B6142E80018059C /* AppDelegate.swift */; };
 		702FA2892B6142E80018059C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2882B6142E80018059C /* SceneDelegate.swift */; };
 		702FA28B2B6142E80018059C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA28A2B6142E80018059C /* ViewController.swift */; };
@@ -36,11 +39,12 @@
 		702FA2D32B617D740018059C /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2D22B617D740018059C /* Decoder.swift */; };
 		702FA2D62B6180D00018059C /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2D52B6180D00018059C /* AuthClient.swift */; };
 		702FA2D82B6180E30018059C /* AuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2D72B6180E30018059C /* AuthEndpoint.swift */; };
-		C26782A32DB9A7EA6DCF5503 /* Pods_Coffe_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEAD9675DF0796A6549E295 /* Pods_Coffe_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17EFA18701C77904D26059EA /* Pods-Coffe App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe App.debug.xcconfig"; path = "Target Support Files/Pods-Coffe App/Pods-Coffe App.debug.xcconfig"; sourceTree = "<group>"; };
+		29DE08FCE30BCAFE2EE63992 /* Pods_Coffe_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70083DD62B73569C0064340A /* LocationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpoint.swift; sourceTree = "<group>"; };
+		70083DD82B7357EB0064340A /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
 		702FA2832B6142E80018059C /* Coffe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702FA2862B6142E80018059C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702FA2882B6142E80018059C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +76,8 @@
 		702FA2D22B617D740018059C /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		702FA2D52B6180D00018059C /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		702FA2D72B6180E30018059C /* AuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndpoint.swift; sourceTree = "<group>"; };
-		C7DC23E8662DF4B280BD695F /* Pods-Coffe App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe App.release.xcconfig"; path = "Target Support Files/Pods-Coffe App/Pods-Coffe App.release.xcconfig"; sourceTree = "<group>"; };
-		DEEAD9675DF0796A6549E295 /* Pods_Coffe_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E005722C6A6FDE3056B5A16 /* Pods-Coffe App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe App.debug.xcconfig"; path = "Target Support Files/Pods-Coffe App/Pods-Coffe App.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFC057FDFA36F863CCE234B /* Pods-Coffe App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe App.release.xcconfig"; path = "Target Support Files/Pods-Coffe App/Pods-Coffe App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,19 +85,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26782A32DB9A7EA6DCF5503 /* Pods_Coffe_App.framework in Frameworks */,
+				0DB1D8427BB421C273BF7666 /* Pods_Coffe_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065504564AECB7EDC77961DF /* Frameworks */ = {
+		70083DD52B73567B0064340A /* LocationClient */ = {
 			isa = PBXGroup;
 			children = (
-				DEEAD9675DF0796A6549E295 /* Pods_Coffe_App.framework */,
+				70083DD62B73569C0064340A /* LocationEndpoint.swift */,
+				70083DD82B7357EB0064340A /* LocationRequest.swift */,
 			);
-			name = Frameworks;
+			path = LocationClient;
 			sourceTree = "<group>";
 		};
 		702FA27A2B6142E80018059C = {
@@ -102,7 +107,7 @@
 				702FA2852B6142E80018059C /* Coffe App */,
 				702FA2842B6142E80018059C /* Products */,
 				80AAD87C67B97EA81C2156C4 /* Pods */,
-				065504564AECB7EDC77961DF /* Frameworks */,
+				ADB779725A505D6B458341C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +257,7 @@
 		702FA2C92B616F880018059C /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				70083DD52B73567B0064340A /* LocationClient */,
 				702FA2D42B6180B50018059C /* AuthClient */,
 				702FA2CA2B616FC00018059C /* NetworkEnum.swift */,
 				702FA2CB2B616FC00018059C /* NetworkRequest.swift */,
@@ -274,10 +280,18 @@
 		80AAD87C67B97EA81C2156C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17EFA18701C77904D26059EA /* Pods-Coffe App.debug.xcconfig */,
-				C7DC23E8662DF4B280BD695F /* Pods-Coffe App.release.xcconfig */,
+				9E005722C6A6FDE3056B5A16 /* Pods-Coffe App.debug.xcconfig */,
+				ADFC057FDFA36F863CCE234B /* Pods-Coffe App.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ADB779725A505D6B458341C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29DE08FCE30BCAFE2EE63992 /* Pods_Coffe_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,11 +301,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 702FA2972B6142EB0018059C /* Build configuration list for PBXNativeTarget "Coffe App" */;
 			buildPhases = (
-				1CDBAB398D5D67BFE549AF76 /* [CP] Check Pods Manifest.lock */,
+				EB28B26F3D4D5646508A0704 /* [CP] Check Pods Manifest.lock */,
 				702FA27F2B6142E80018059C /* Sources */,
 				702FA2802B6142E80018059C /* Frameworks */,
 				702FA2812B6142E80018059C /* Resources */,
-				2ED7424914E23527D7BDFC94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,7 +361,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CDBAB398D5D67BFE549AF76 /* [CP] Check Pods Manifest.lock */ = {
+		EB28B26F3D4D5646508A0704 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,23 +383,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2ED7424914E23527D7BDFC94 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Coffe App/Pods-Coffe App-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Coffe App/Pods-Coffe App-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffe App/Pods-Coffe App-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -394,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70083DD92B7357EB0064340A /* LocationRequest.swift in Sources */,
 				702FA2B62B616DA20018059C /* RegistrationProtocol.swift in Sources */,
 				702FA2C62B616E8E0018059C /* AuthPresenter.swift in Sources */,
 				702FA2A12B61456C0018059C /* UserData.swift in Sources */,
@@ -409,6 +406,7 @@
 				702FA2CF2B6178BC0018059C /* HTTP.swift in Sources */,
 				702FA2AE2B61483F0018059C /* ExtansionUiViewController.swift in Sources */,
 				702FA2B82B616DBA0018059C /* RegistrationViewController.swift in Sources */,
+				70083DD72B73569C0064340A /* LocationEndpoint.swift in Sources */,
 				702FA2CC2B616FC00018059C /* NetworkEnum.swift in Sources */,
 				702FA2A82B6146510018059C /* Helpers.swift in Sources */,
 				702FA28B2B6142E80018059C /* ViewController.swift in Sources */,
@@ -554,7 +552,7 @@
 		};
 		702FA2982B6142EB0018059C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17EFA18701C77904D26059EA /* Pods-Coffe App.debug.xcconfig */;
+			baseConfigurationReference = 9E005722C6A6FDE3056B5A16 /* Pods-Coffe App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -582,7 +580,7 @@
 		};
 		702FA2992B6142EB0018059C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7DC23E8662DF4B280BD695F /* Pods-Coffe App.release.xcconfig */;
+			baseConfigurationReference = ADFC057FDFA36F863CCE234B /* Pods-Coffe App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

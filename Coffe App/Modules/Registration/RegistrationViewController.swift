@@ -16,8 +16,11 @@ final class RegistrationViewController: ViewController {
     )
     
     private lazy var buttonRegistration = CreateButton(
-        name: Constants.Text.registration)
-
+        name: Constants.Text.registration,
+        color: Constants.Colors.buttonBrownColor,
+        textColor: Constants.Colors.buttonTextColor
+    )
+    
     private lazy var passwordLabel = CreateLabele(
         nameLabel: Constants.Text.password,
         size: 15,
@@ -89,6 +92,7 @@ final class RegistrationViewController: ViewController {
         view.addSubview(firstVerticalStakView)
         view.addSubview(secondVerticalStakView)
         view.addSubview(thirdVerticalStakView)
+        buttonRegistration.addTarget(self, action: #selector(registerButtonPrees), for: .touchUpInside)
     }
     
     override func setupConstarint() {
@@ -106,18 +110,26 @@ final class RegistrationViewController: ViewController {
             secondVerticalStakView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 18),
             secondVerticalStakView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -18),
 
-            thirdVerticalStakView.topAnchor.constraint(equalTo: secondVerticalStakView.bottomAnchor, constant: 24),
+            thirdVerticalStakView.topAnchor.constraint(equalTo: secondVerticalStakView.bottomAnchor, constant: 34),
             thirdVerticalStakView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 18),
             thirdVerticalStakView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -18),
 
 
         ])
     }
+    
+    @objc func registerButtonPrees(){
+        presenter.registerButtonTapped(
+            login: emailTextFiled.text,
+            password: passwordTextFiled.text,
+            confirmPassword: returnTextFiled.text
+        )
+    }
 }
 
 extension RegistrationViewController: RegistrationViewInput {
     func showError(_ message: String) {
-        self.alertOk(title: "error", message: message)
+        self.alertOk(title: "Ошибка", message: message)
     }
 }
 

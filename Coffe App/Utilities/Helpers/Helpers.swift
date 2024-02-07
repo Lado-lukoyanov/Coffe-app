@@ -68,24 +68,25 @@ class CreateLabele : UILabel {
 
 class CreateButton: UIButton {
     
-    init(name: String) {
+    init(name: String, color: UIColor, textColor: UIColor) {
         super.init(frame: .zero)
-        setupButton(name: name)
+        setupButton(name: name, color: color, textColor: textColor)
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     //MARK: - Private
-    private func setupButton(name: String) {
-        backgroundColor =  Constants.Colors.buttonBrownColor
+    private func setupButton(name: String, color: UIColor, textColor: UIColor) {
+        backgroundColor = color
         titleLabel?.font = UIFont.systemFont(ofSize: 18)
         setTitle(name, for: .normal)
         layer.cornerRadius = 25
-        setTitleColor(Constants.Colors.buttonTextColor, for: .normal)
+        setTitleColor(textColor, for: .normal)
         heightAnchor.constraint(equalToConstant: 47).isActive = true
         translatesAutoresizingMaskIntoConstraints = false
             
     }
     
 }
+
