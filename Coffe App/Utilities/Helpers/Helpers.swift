@@ -67,26 +67,40 @@ class CreateLabele : UILabel {
 }
 
 class CreateButton: UIButton {
+    enum ButtonStyle {
+        case primary
+        case forCollection
+        case forTable
+    }
     
-    init(name: String, color: UIColor, textColor: UIColor) {
+    init(name: String,style: ButtonStyle) {
         super.init(frame: .zero)
-        setupButton(name: name, color: color, textColor: textColor)
+        setupButton(name: name, style: style)
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     //MARK: - Private
-    private func setupButton(name: String, color: UIColor, textColor: UIColor) {
-        backgroundColor = color
-        titleLabel?.font = UIFont.systemFont(ofSize: 18)
+    private func setupButton(name: String, style: ButtonStyle) {
+        switch style{
+        case .primary:
+            backgroundColor = Constants.Colors.buttonBrownColor
+            setTitleColor(Constants.Colors.buttonTextColor, for: .normal)
+            heightAnchor.constraint(equalToConstant: 47).isActive = true
+            layer.cornerRadius = 25
+            titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        case .forCollection:
+            backgroundColor =  #colorLiteral(red: 0.9647058824, green: 0.8980392157, blue: 0.8196078431, alpha: 1)
+            titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        case .forTable:
+            backgroundColor =  #colorLiteral(red: 0.5176470588, green: 0.3882352941, blue: 0.2509803922, alpha: 1)
+            titleLabel?.font = UIFont.systemFont(ofSize: 14)
+
+        }
         setTitle(name, for: .normal)
-        layer.cornerRadius = 25
-        setTitleColor(textColor, for: .normal)
-        heightAnchor.constraint(equalToConstant: 47).isActive = true
         translatesAutoresizingMaskIntoConstraints = false
             
     }
     
 }
-

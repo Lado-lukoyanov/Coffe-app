@@ -23,3 +23,11 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 }
+
+extension UIStackView {
+    func addArragedSubwies(_ views: UIView...) {
+        for view in views {
+            addArrangedSubview(view)
+        }
+    }
+}

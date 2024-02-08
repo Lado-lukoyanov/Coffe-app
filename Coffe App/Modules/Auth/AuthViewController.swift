@@ -33,8 +33,7 @@ final class AuthViewController: ViewController {
     
     private lazy var buttonAuth = CreateButton(
         name: Constants.Text.authButton,
-        color: Constants.Colors.buttonBrownColor,
-        textColor: Constants.Colors.buttonTextColor
+        style: .primary
     )
     
     private lazy var firstVerticalStakView: UIStackView = {

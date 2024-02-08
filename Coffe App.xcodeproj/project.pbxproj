@@ -10,6 +10,12 @@
 		0DB1D8427BB421C273BF7666 /* Pods_Coffe_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DE08FCE30BCAFE2EE63992 /* Pods_Coffe_App.framework */; };
 		70083DD72B73569C0064340A /* LocationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DD62B73569C0064340A /* LocationEndpoint.swift */; };
 		70083DD92B7357EB0064340A /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DD82B7357EB0064340A /* LocationRequest.swift */; };
+		70083DDB2B735F200064340A /* MainViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DDA2B735F200064340A /* MainViewProtocols.swift */; };
+		70083DDF2B737B4F0064340A /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DDE2B737B4F0064340A /* TableCell.swift */; };
+		70083DE12B737D910064340A /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DE02B737D910064340A /* MainViewInteractor.swift */; };
+		70083DE32B737E010064340A /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70083DE22B737E010064340A /* MainViewPresenter.swift */; };
+		701D12502B73AC4D002F5CD4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701D124F2B73AC4D002F5CD4 /* MainViewController.swift */; };
+		701D12522B73D46A002F5CD4 /* CountValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701D12512B73D46A002F5CD4 /* CountValueView.swift */; };
 		702FA2872B6142E80018059C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2862B6142E80018059C /* AppDelegate.swift */; };
 		702FA2892B6142E80018059C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA2882B6142E80018059C /* SceneDelegate.swift */; };
 		702FA28B2B6142E80018059C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA28A2B6142E80018059C /* ViewController.swift */; };
@@ -45,6 +51,12 @@
 		29DE08FCE30BCAFE2EE63992 /* Pods_Coffe_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70083DD62B73569C0064340A /* LocationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpoint.swift; sourceTree = "<group>"; };
 		70083DD82B7357EB0064340A /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		70083DDA2B735F200064340A /* MainViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewProtocols.swift; sourceTree = "<group>"; };
+		70083DDE2B737B4F0064340A /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		70083DE02B737D910064340A /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		70083DE22B737E010064340A /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		701D124F2B73AC4D002F5CD4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		701D12512B73D46A002F5CD4 /* CountValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountValueView.swift; sourceTree = "<group>"; };
 		702FA2832B6142E80018059C /* Coffe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702FA2862B6142E80018059C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		702FA2882B6142E80018059C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +111,14 @@
 				70083DD82B7357EB0064340A /* LocationRequest.swift */,
 			);
 			path = LocationClient;
+			sourceTree = "<group>";
+		};
+		70083DDD2B737B280064340A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				70083DDE2B737B4F0064340A /* TableCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		702FA27A2B6142E80018059C = {
@@ -164,6 +184,7 @@
 		702FA2A52B6146140018059C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				70083DDD2B737B280064340A /* TableViewCell */,
 				702FA2AC2B6148300018059C /* Extansion */,
 				702FA2A62B61461E0018059C /* Helpers */,
 			);
@@ -174,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				702FA2A72B6146510018059C /* Helpers.swift */,
+				701D12512B73D46A002F5CD4 /* CountValueView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -236,6 +258,10 @@
 		702FA2B22B616D720018059C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				70083DDA2B735F200064340A /* MainViewProtocols.swift */,
+				701D124F2B73AC4D002F5CD4 /* MainViewController.swift */,
+				70083DE22B737E010064340A /* MainViewPresenter.swift */,
+				70083DE02B737D910064340A /* MainViewInteractor.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -397,13 +423,17 @@
 				702FA29C2B6145080018059C /* ApplicationService.swift in Sources */,
 				702FA2BC2B616E110018059C /* RegistrationPresentor.swift in Sources */,
 				702FA2C82B616EAA0018059C /* AuthIntersaptor.swift in Sources */,
+				701D12502B73AC4D002F5CD4 /* MainViewController.swift in Sources */,
 				702FA2C02B616E440018059C /* AuthViewController.swift in Sources */,
 				702FA29E2B6145370018059C /* UserService.swift in Sources */,
+				70083DDF2B737B4F0064340A /* TableCell.swift in Sources */,
 				702FA2CD2B616FC00018059C /* NetworkRequest.swift in Sources */,
 				702FA2AB2B6146EE0018059C /* Configuration.swift in Sources */,
 				702FA2BE2B616E2D0018059C /* RegistrationIntersaptor.swift in Sources */,
 				702FA2BA2B616DE90018059C /* RegistrationRouter.swift in Sources */,
+				70083DE12B737D910064340A /* MainViewInteractor.swift in Sources */,
 				702FA2CF2B6178BC0018059C /* HTTP.swift in Sources */,
+				701D12522B73D46A002F5CD4 /* CountValueView.swift in Sources */,
 				702FA2AE2B61483F0018059C /* ExtansionUiViewController.swift in Sources */,
 				702FA2B82B616DBA0018059C /* RegistrationViewController.swift in Sources */,
 				70083DD72B73569C0064340A /* LocationEndpoint.swift in Sources */,
@@ -411,8 +441,10 @@
 				702FA2A82B6146510018059C /* Helpers.swift in Sources */,
 				702FA28B2B6142E80018059C /* ViewController.swift in Sources */,
 				702FA2D12B617D670018059C /* Enicoder.swift in Sources */,
+				70083DE32B737E010064340A /* MainViewPresenter.swift in Sources */,
 				702FA2A42B6145C90018059C /* Constants.swift in Sources */,
 				702FA2D62B6180D00018059C /* AuthClient.swift in Sources */,
+				70083DDB2B735F200064340A /* MainViewProtocols.swift in Sources */,
 				702FA2C22B616E5D0018059C /* AuthProtocol.swift in Sources */,
 				702FA2872B6142E80018059C /* AppDelegate.swift in Sources */,
 				702FA2C42B616E800018059C /* AuthRouter.swift in Sources */,

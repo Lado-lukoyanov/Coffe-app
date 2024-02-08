@@ -33,6 +33,14 @@ enum Constants {
         static var navBackColor: UIColor {
             return #colorLiteral(red: 0.9845256209, green: 0.981387794, blue: 0.9813215137, alpha: 1)
         }
+        
+        static var tableColor: UIColor {
+            return #colorLiteral(red: 0.9647058824, green: 0.8980392157, blue: 0.8196078431, alpha: 1)
+        }
+        
+        static var blackColor: UIColor {
+            return #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
     }
     
     enum Text {

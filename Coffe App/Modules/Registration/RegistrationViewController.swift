@@ -17,8 +17,7 @@ final class RegistrationViewController: ViewController {
     
     private lazy var buttonRegistration = CreateButton(
         name: Constants.Text.registration,
-        color: Constants.Colors.buttonBrownColor,
-        textColor: Constants.Colors.buttonTextColor
+        style: .primary
     )
     
     private lazy var passwordLabel = CreateLabele(
